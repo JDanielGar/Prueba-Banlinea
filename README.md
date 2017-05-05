@@ -1,4 +1,4 @@
-# Prubea Banlinea
+# Prueba Banlinea
 
 ## Introduction
 
