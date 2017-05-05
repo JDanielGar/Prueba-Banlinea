@@ -1,38 +1,27 @@
+$(window).resize(function() {
+    validatePlaceholders();
+});
 
-(function(){
-	'use strict';
+function validatePlaceholders() {
+    if ($(window).width() <= 420) {
+        setPlaceholders();
+    } else {
+        deletePlaceholders();
+    }
+}
 
-	//alertify.alert("Message");
-	//alertify.success("You've clicked OK and typed: ");
+function deletePlaceholders() {
+    $("#email_input").attr("placeholder", "");
+    $("#car_branding_select option:first").empty().append("");
+    $("#model_car_select option:first").empty().append("");
+    $("#year_car_select option:first").empty().append("");
+}
 
-	//setup form caorusel
-	$(document).ready(function(){
-		var owl = $('#form-carousel');
-		owl.owlCarousel({
-		    //nav:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    }
-  		});
-  		//setup dom listeners
-		$('.customNextBtn').click(function() {
-	    owl.trigger('next.owl.carousel');
-		});
-		// Go to the previous item
-		$('.customPrevBtn').click(function() {
-		    // With optional speed parameter
-		    // Parameters has to be in square bracket '[]'
-		    owl.trigger('prev.owl.carousel', [300]);
-		});
-		
-	});
-})();
+function setPlaceholders() {
+    $("#email_input").attr("placeholder", "Email");
+    $("#car_branding_select option:first").empty().append("Marca del auto");
+    $("#model_car_select option:first").empty().append("Modelo del auto");
+    $("#year_car_select option:first").empty().append("Año");
+}
 
+validatePlaceholders();

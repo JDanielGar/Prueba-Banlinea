@@ -1,117 +1,114 @@
 <!doctype html>
 <html>
-
-  <title>Prueba Front End</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="libs/alertifyjs/dist/css/alertify.css" />
-  <link rel="stylesheet" type="text/css" href="libs/owl.carousel/dist/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" type="text/css" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css" />
-  <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-
-  <body>
-	<header>
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">
-		      	<img src="assets/images/logo.png" class="logo" id="logo-banlinea-desktop" />
-		      	<img src="assets/images/logo-mov.png" class="logo" id=logo-banlinea-movil />
-		      </a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">item 1</a></li>
-		        <li><a href="#">item 2</a></li>
-		        <li><a href="#">item 3</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</header>
-	<section>
-		<div class="decoration"></div>
-
-		<div class="form-content row">
-			<div class="col-md-2 col-sm-2 col-xs-2 display-buttons left-button">
-				<a href="#" class="glyphicon glyphicon-menu-left left-button"></a>
-			</div>
-			<div class="col-md-8 col-sm-8 col-xs-8 input-menu">
-				<div class="tittles">
-					<h1>Cotiza tu Seguro Automotriz</h1>
-					<h2>¡Resultados Instantáneos!</h2>
-				</div>
-				<div class="row">
-					<form class="menu">
-						<div class="menu col-md-6 col-sm-6">
-							<div class="row">
-								<label for="cars-brand" >Marca de auto</label>
-								<p class="tablet-label col-xs-4">Marca de auto</p>
-								<select class="form-control col-xs-5" id="cars-brand">
-						      	  <option>1</option>
-						      		<option>2</option>
-						     	  	<option>3</option>
-						     	   <option>4</option>
-						    </select>
-							</div>
-						</div>
-						<div class="menu col-md-6 col-sm-6" >
-							<div class="row">
-								<label for="cars-brand">Modelo del auto</label>
-								<p class="tablet-label col-xs-4">Marca de auto</p>
-								<select class="form-control col-xs-5" id="cars-brand">
-									<option>1</option>
-							  	 	<option>2</option>
-							    	<option>3</option>
-									<option>4</option>
-								</select>
-							</div>
-						</div>
-						<div class="menu col-md-4 col-sm-4" >
-							<div class="row">
-							   	<label for="cars-brand">Año</label>
-							    <select class="form-control" id="cars-brand">
-							       	<option>1</option>
-							        <option>2</option>
-							        <option>3</option>
-							        <option>4</option>
-							    </select>
-							</div>
-						</div>
-						<div class="menu col-md-8 col-sm-8" >
-							<div class="row">
-					    		<label for="exampleInputEmail1">Email</label>
-					    		<input type="email" class="form-control" id="exampleInputEmail1" />	
-							</div>
-				    	</div>
-				    	<button type="button" class="submit-button btn btn-default col-md-12">Cotizar</button>
-				    	<a href="#" class="recovery-button">Recuperar cotización</a>
-					</form>
-					
-				</div>
-			</div>
-			<div class="col-md-2 col-sm-2 col-xs-2 display-buttons right-button">
-				<a href="#" class="glyphicon glyphicon-menu-right right-button"></a>
-			</div>
-		</div>
-		<div style="text-align:center">
-				  		<span class="dot" onclick="currentSlide(1)"></span> 
-				  		<span class="dot" onclick="currentSlide(2)"></span> 
-				  		<span class="dot" onclick="currentSlide(3)"></span> 
-					</div>
-	</section>
-	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="libs/alertifyjs/dist/js/alertify.js"></script>
-   	<script type="text/javascript" src="js/main.js"></script>
-  </body>
-
+   <head>
+      <title>Prueba Front End</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                  <img src="assets/images/logo.png" id="logo-banlinea-desktop" />
+                  </a>
+               </div>
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#">item 1</a></li>
+                     <li><a href="#">item 2</a></li>
+                     <li><a href="#">item 3</a></li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </header>
+      <section>
+         <div class="decoration"></div>
+         <div class="arrow-buttons">
+            <div class="right-button">
+               <a href="#" class="glyphicon glyphicon-menu-right right-button"></a>
+            </div>
+            <div class="left-button">
+               <a href="#" class="glyphicon glyphicon-menu-left left-button"></a>
+            </div>
+         </div>
+         <div class="main-container row">
+            <div class="tittles">
+               <h1>Cotiza tu Seguro Automotriz</h1>
+               <h2>¡Resultados instantáneos!</h2>
+            </div>
+            <div class="main-form">
+               <div class="form-box">
+                  <div class="col-xs-12 col-sm-12 col-md-6">
+                     <div class="col-md-12 col-sm-5 title">
+                        Marca del auto
+                     </div>
+                     <div class="col-md-12 col-sm-7 col-xs-12">
+                        <select id="car_branding_select">
+                           <option vlaue="0" selected></option>
+                           <option value="1">BMW</option>
+                           <option value="2">Ferrari</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-xs-8  col-sm-12 col-md-6">
+                     <div class="col-md-12 col-sm-5 title">
+                        Modelo del auto
+                     </div>
+                     <div class="col-md-12 col-sm-7 col-xs-12">
+                        <select id="model_car_select">
+                           <option value="0" selected></option>
+                           <option value="1">2016</option>
+                           <option value="2">2015</option>
+                           <option value="3">2013</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-xs-4  col-sm-12 col-md-4">
+                     <div class="col-md-12 col-sm-5 title">
+                        Año
+                     </div>
+                     <div class="col-md-12 col-sm-7 col-xs-12">
+                        <select class="small-select" id="year_car_select">
+                           <option value="0" selected></option>
+                           <option value="1">2016</option>
+                           <option value="2">2015</option>
+                           <option value="3">2013</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-8">
+                     <div class="col-md-12 col-sm-5 title">
+                        Email
+                     </div>
+                     <div class="col-md-12 col-sm-7 col-xs-12">
+                        <input type="email" id="email_input" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button type="button" class="submit-button btn btn-default col-md-12">Cotizar</button>
+            <a href="#" class="recovery-button">Recuperar cotización</a>
+         </div>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+      </section>
+      <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+   </body>
 </html>
