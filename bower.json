@@ -1,0 +1,26 @@
+{
+  "name": "prueba-front",
+  "description": "Front-End Test",
+  "main": "index.js",
+  "authors": [
+    "Daniel Garcia"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JDanielGar/Prueba-Banlinea",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "alertifyjs": "^1.0.11",
+    "owl.carousel": "^2.2.1"
+  }
+}
